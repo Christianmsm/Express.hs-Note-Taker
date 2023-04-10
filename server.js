@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 //Middleware to parse JSON & urlencoded data
 app.use(express.json());
-app.use(express.urlencoded({exntended: true}));
+app.use(express.urlencoded({ exntended: true }));
 
 
 app.use(express.static('public'));

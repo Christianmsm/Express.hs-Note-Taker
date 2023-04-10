@@ -1,24 +1,26 @@
-//Imports Express 
-const express = require('express');
-const app = express();
+const app = require('express').Router();
 const store = require('../db/store');
-const router = express.Router();
+
 
 
 app.get('/notes', (req, res) => {
     store.collectAllNotes()
     .then((notes) => {
-        return res.JSON(notes)
+        return res.json(notes)
     })
 })
 
 app.post('/notes', (req, res) => {
     store.addingNotes(req.body)
-    .then((notes) => res.JSON(notes))
+    .then((notes) => res.json(notes))
 })
 
+app.delete('/notes', (req, res) => {
+    store.deletingNotes(req.params.id)
+    .then(() => res.json({ok:true}))
+})
 //Exports the route
-module.exports = router
+module.exports = app;
 
 
   

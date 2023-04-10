@@ -1,6 +1,1 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+[{"title":"Test Title","text":"Test text"},{"title":"cghj","text":"sfgh","id":"4519d58c-715a-44f8-a56b-d74e97702111"},{"title":"Testing","text":"I think this worked?\n","id":"d0ba04ae-ca19-4b26-89cb-6c7137ec0a67"},{"title":"This is a test","text":"Making sure that it saves to the db.json","id":"681f93fe-d375-457d-a0ed-97cfba32a69f"}]
