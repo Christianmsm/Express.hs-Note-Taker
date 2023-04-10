@@ -6,12 +6,14 @@ const { v4: uuid } = require('uuid');
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
+//This class was suggested by my study group member Chelsea to hold all the functions needed for the application and clean up the code overall
 class Store {
+    //Reads the file using utf-8
     read() {
         return readFile('db/db.json', 'utf-8')
     }
 
-
+    //Writes to the file
     write(note) {
         return writeFile('db/db.json', JSON.stringify(note))
     }
@@ -50,5 +52,5 @@ class Store {
             .then((filteredNotes) => this.write(filteredNotes))
     }
 }
-
+//Exports this module
 module.exports = new Store();
