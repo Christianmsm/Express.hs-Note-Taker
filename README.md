@@ -22,6 +22,12 @@ Node.js, Express.js, JavaScript
 
 ## Contribution
 
+## Resources
+Blog post for the different status codes and their meaning:
+https://www.softwaretestinghelp.com/rest-api-response-codes/
+
+Was assisted by fellow student Chelsea Luevano when creating this application.
+
 ## GitHub
 Christianmsm: https://github.com/Christianmsm
 ## Email

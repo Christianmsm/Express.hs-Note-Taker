@@ -1,10 +1,9 @@
 //Imports express
 const express = require('express');
 
-// Import the built-in Node.js path module
+// Import the path module
 const path = require('path');
 
-//
 const router = express.Router()
 
 // Route for the notes.html
@@ -12,10 +11,10 @@ router.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'))
 })
 
-//Wildcard route
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'))
-  })
+//Wildcard route that will direct the user to the home page in any unforeseen situation
+router.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/index.html'))
+  });
 
-// Export the router
+// Export the route
 module.exports = router
