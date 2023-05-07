@@ -27,6 +27,13 @@ Install Node.js & Express.js
 ## Contribution
 Currently there are no contributions being taken.
 ## Resources
+Deployed Application:
+https://notetaker-cms.herokuapp.com/
+
+Screenshots:
+<img src="Assets/notetaker-cms.herokuapp.com_.png">
+<img src="Assets/notetaker-cms.herokuapp.com_notes.png">
+
 Blog post for the different status codes and their meaning:
 https://www.softwaretestinghelp.com/rest-api-response-codes/
 
